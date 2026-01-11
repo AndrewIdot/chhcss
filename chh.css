@@ -9,23 +9,30 @@
 
 @font-face {
     font-family: 'ihatecomicsans';
-    src: url("https://raw.githubusercontent.com/AndrewIdot/FileDump/refs/heads/main/ihatecomicsans.ttf") format('truetype');
+    src: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/fnt/ihatecomicsans.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'adler';
-  src: url("https://file.garden/ZHZbTOH23R-SBpdY/adler.ttf");
+  src: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/fnt/adler.ttf");
 }
 
 @font-face {
     font-family: 'derzoxrain';
-    src: url("https://raw.githubusercontent.com/AndrewIdot/FileDump/refs/heads/main/rainw.ttf") format('truetype');
+    src: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/fnt/rainw.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'lucidaconsolebu';
-    src: url("https://raw.githubusercontent.com/AndrewIdot/FileDump/refs/heads/main/rainw.ttf") format('truetype');
+    src: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/fnt/lucon.ttf") format('truetype');
 }
+
+@font-face {
+	font-family: 'comicsanslol';
+	src: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/fnt/Comic%20Sans%20MS.ttf") format('truetype');
+}
+
+/* //// font end //// */
 
 /* VEA_REBIRTH */
 
@@ -80,7 +87,7 @@ li[data-author-id="1334564142891143259"] .c19a557985eb7793-clanTagChiplet, .ee71
     font-weight: bold;
     text-transform: uppercase;
     font-family: "adler";
-    background: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ), url('https://file.garden/ZHZbTOH23R-SBpdY/paper.jpg') !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ), url('https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/paper.jpg') !important;
     background-size: 40% !important;
     background-color: #000;
     border: dashed black 1px;
@@ -117,18 +124,18 @@ li[data-author-id="467270876673605642"] ._752971923a1e6683-markup {
 
 li[data-author-id="636050805103001650"] ._5126c0cd07f243a0-message {
     background-color: #C2AEEF; //#451f68;
-    background-image: url(https://file.garden/ZHZbTOH23R-SBpdY/angelapolka.png) !important;
+    background-image: url('https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/angelapolka.png') !important;
     background-size: 40% !important;
     border: 4px solid #DACCFF;
     border-radius: 15px;
 }
 
 li[data-author-id="636050805103001650"] {
-	cursor: url("https://raw.githubusercontent.com/AndrewIdot/FileDump/refs/heads/main/cur-dreweehand.png"), auto;
+	cursor: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/cur-dreweehand.png"), auto;
 }
 
 li[data-author-id="636050805103001650"]:active {
-    cursor: url("https://raw.githubusercontent.com/AndrewIdot/FileDump/refs/heads/main/cur-dreweehandclosed.png"), auto !important;
+    cursor: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/cur-dreweehandclosed.png"), auto !important;
 }
 
 li[data-author-id="636050805103001650"] ._752971923a1e6683-markup .edefb8e22d63c542-anchor:hover, 
@@ -139,7 +146,7 @@ li[data-author-id="636050805103001650"] .c19a557985eb7793-clickable:hover,
 li[data-author-id="636050805103001650"] ._10651c5cfe637db6-clickable,
 li[data-author-id="636050805103001650"] .af017ab847f75d02-clickable:hover,
 li[data-author-id="636050805103001650"] .af017ab847f75d02-originalLink:hover {
-    cursor: url("https://raw.githubusercontent.com/AndrewIdot/FileDump/refs/heads/main/cur-dreweehandpoint.png"), auto;
+    cursor: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/cur-dreweehandpoint.png"), auto;
 }
 
 li[data-author-id="636050805103001650"] .c19a557985eb7793-messageContent {
@@ -159,18 +166,8 @@ li[data-author-id="636050805103001650"] .c19a557985eb7793-messageContent {
     }
 }
 
-li[data-author-id="636050805103001650"] ._752971923a1e6683-markup h1 {
-    color: black;
-    font-family: 'ihatecomicsans', Arial, sans-serif !important;
-    font-weight: bold;
-}
-
-li[data-author-id="636050805103001650"] ._752971923a1e6683-markup h2 {
-    color: black;
-    font-family: 'ihatecomicsans', Arial, sans-serif !important;
-    font-weight: bold;
-}
-
+li[data-author-id="636050805103001650"] ._752971923a1e6683-markup h1,
+li[data-author-id="636050805103001650"] ._752971923a1e6683-markup h2,
 li[data-author-id="636050805103001650"] ._752971923a1e6683-markup h3 {
     color: black;
     font-family: 'ihatecomicsans', Arial, sans-serif !important;
@@ -250,7 +247,7 @@ li[data-author-id="636050805103001650"] .c19a557985eb7793-messageContent .edefb8
 }
 
 li[data-author-id="636050805103001650"] ._10651c5cfe637db6-badge {
-    content: url("https://raw.githubusercontent.com/AndrewIdot/FileDump/refs/heads/main/favicon.png")
+    content: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/favicon.png")
 }
 
 li[data-author-id="636050805103001650"] ._10651c5cfe637db6-tagText {
@@ -303,4 +300,10 @@ li[data-author-id="714529404432154734"] .c19a557985eb7793-repliedMessageClickabl
 li[data-author-id="714529404432154734"] .c19a557985eb7793-avatar,
 li[data-author-id="714529404432154734"] .c19a557985eb7793-avatarDecoration {
     visibility: hidden;
+}
+
+/* JOSE */
+
+li[data-author-id="328514436245618699"] .c19a557985eb7793-messageContent {
+    font-family: "Comic Sans MS", 'comicsanslol', Arial, sans-serif !important;
 }
