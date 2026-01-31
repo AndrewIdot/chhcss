@@ -1,8 +1,8 @@
 /**
- * @name CHHMemberstest
- * @author the CHH guys
+ * @name ChhMembers
+ * @author the chh guys
  * @description all of us
- * @version 1.2.4
+ * @version 1.2.5
 */
 
 /* //// fonts //// */
@@ -16,16 +16,8 @@
 
 @font-face {
   font-family: 'adler';
-  src: url("https://file.garden/ZHZbTOH23R-SBpdY/Mom.ttf");
-  
+  src: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/fnt/adler.ttf");
 }
-
-@font-face {
-    font-family: 'typewriter';
-    src: url("https://file.garden/ZHZbTOH23R-SBpdY/veteran%20typewriter.ttf")
-}
-/*V-NOTE: I added this font in an attempt to make Ice's messages work a little better with special characters, since @ and other characters
-like it just do not exist in Adler, but I can't find a way to get the fallback to work properly, so I'll be sitting on this*/
 
 @font-face {
     font-family: 'derzoxrain';
@@ -56,7 +48,7 @@ li[data-author-id="1334564142891143259"] {
     background-image: linear-gradient(to right, white 4px,black 4px, black 7px, white 7px, white 10px, black 10px);
 }
 
-li[data-author-id="1334564142891143259"] .c19a557985eb7793-messageContent {
+li[data-author-id="1334564142891143259"] .messageContent_c19a55 {
     color: hwb(0 100% 0%);
     font-family: "Lucida Console", "lucidaconsolebu" !important;
     font-size: 14px;
@@ -68,11 +60,11 @@ li[data-author-id="1334564142891143259"] .c19a557985eb7793-messageContent {
     }
 }
 
-li[data-author-id="1334564142891143259"] .c19a557985eb7793-headerText .c19a557985eb7793-username {
+li[data-author-id="1334564142891143259"] .headerText_c19a55 .username_c19a55 {
     font-size: 0;
 } 
 
-li[data-author-id="1334564142891143259"] .c19a557985eb7793-headerText .c19a557985eb7793-username::after {
+li[data-author-id="1334564142891143259"] .headerText_c19a55 .username_c19a55::after {
     content: "Vea Ortis";
 	font-family: "Lucida Console", "lucidaconsolebu" !important;
     -webkit-text-fill-color: white;
@@ -87,17 +79,17 @@ username as well, which looks really weird. unsure if there's a solution or if i
 have to drop this idea, maybe i could do a custom server tag like angela? */
 /* angela note: fixed :3 */
 
-li[data-author-id="1334564142891143259"] .c19a557985eb7793-username {
+li[data-author-id="1334564142891143259"] .username_c19a55 {
     -webkit-text-fill-color: white;
     font-weight: bolder;
 } 
 
-li[data-author-id="1334564142891143259"] .c19a557985eb7793-clanTagChiplet,
-li[data-author-id="1334564142891143259"]  .ee71ee16cc02184d-clickable {
+li[data-author-id="1334564142891143259"] .clanTagChiplet_c19a55,
+li[data-author-id="1334564142891143259"]  .clickable_ee71ee {
     display: none;
 }
 
-[data-author-id="1334564142891143259"] .c19a557985eb7793-messageContent::before {
+[data-author-id="1334564142891143259"] .messageContent_c19a55::before {
     display: inline-block;
     font-family: "MS Gothic";
     font-size: 0.80em;
@@ -182,10 +174,10 @@ li[data-author-id="467270876673605642"] .af017ab847f75d02-originalLink {
 
 /* ANGELA */
 
-li[data-author-id="636050805103001650"] ._5126c0cd07f243a0-message {
+li[data-author-id="636050805103001650"] .message__5126c {
     background-color: #C2AEEF;
     background-image: url('https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/angelapolka.png') !important;
-    background-size: 300px 300px !important;
+    background-size: 40% !important;
     border: 4px solid #DACCFF;
     border-radius: 15px;
 }
@@ -198,18 +190,18 @@ li[data-author-id="636050805103001650"]:active {
     cursor: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/cur-dreweehandclosed.png"), auto !important;
 }
 
-li[data-author-id="636050805103001650"] ._752971923a1e6683-markup .edefb8e22d63c542-anchor:hover, 
-li[data-author-id="636050805103001650"] ._6c706db0523bd9a7-downloadHoverButtonIcon, 
-li[data-author-id="636050805103001650"] ._0ccaee68b77c7469-fileNameLink, 
-li[data-author-id="636050805103001650"] .c19a557985eb7793-username:hover,
-li[data-author-id="636050805103001650"] .c19a557985eb7793-clickable:hover, 
-li[data-author-id="636050805103001650"] ._10651c5cfe637db6-clickable,
-li[data-author-id="636050805103001650"] .af017ab847f75d02-clickable:hover,
-li[data-author-id="636050805103001650"] .af017ab847f75d02-originalLink:hover {
+li[data-author-id="636050805103001650"] .markup__75297 .anchor_edefb8:hover, 
+li[data-author-id="636050805103001650"] .downloadHoverButtonIcon__6c706, 
+li[data-author-id="636050805103001650"] .fileNameLink__0ccae, 
+li[data-author-id="636050805103001650"] .username_c19a55:hover,
+li[data-author-id="636050805103001650"] .clickable_c19a55:hover, 
+li[data-author-id="636050805103001650"] .clickable__10651,
+li[data-author-id="636050805103001650"] .clickable_af017a:hover,
+li[data-author-id="636050805103001650"] .originalLink_af017a:hover {
     cursor: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/cur-dreweehandpoint.png"), auto;
 }
 
-li[data-author-id="636050805103001650"] .c19a557985eb7793-messageContent {
+li[data-author-id="636050805103001650"] .messageContent_c19a55 {
     color: black;
     font-family: 'ihatecomicsans', Arial, sans-serif !important;
     font-weight: bold;
@@ -221,32 +213,32 @@ li[data-author-id="636050805103001650"] .c19a557985eb7793-messageContent {
     }
 }
 
-li[data-author-id="636050805103001650"] ._752971923a1e6683-markup h1,
-li[data-author-id="636050805103001650"] ._752971923a1e6683-markup h2,
-li[data-author-id="636050805103001650"] ._752971923a1e6683-markup h3 {
+li[data-author-id="636050805103001650"] .markup__75297 h1,
+li[data-author-id="636050805103001650"] .markup__75297 h2,
+li[data-author-id="636050805103001650"] .markup__75297 h3 {
     color: black;
     font-family: 'ihatecomicsans', Arial, sans-serif !important;
     font-weight: bold;
 }
 
-li[data-author-id="636050805103001650"] ._752971923a1e6683-markup small span {
+li[data-author-id="636050805103001650"] .markup__75297 small span {
     color: black;
     font-family: 'ihatecomicsans', Arial, sans-serif !important;
     font-weight: normal;
 }
 
-li[data-author-id="636050805103001650"] ._752971923a1e6683-markup small span strong span {
+li[data-author-id="636050805103001650"] .markup__75297 small span strong span {
     color: black;
     font-family: 'ihatecomicsans', Arial, sans-serif !important;
     font-weight: bolder;
     font-size: 14px;
 }
 
-li[data-author-id="636050805103001650"] ._10651c5cfe637db6-tagText, 
-li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedMessage .c19a557985eb7793-username, 
-li[data-author-id="636050805103001650"] .c19a557985eb7793-timestamp, 
-li[data-author-id="636050805103001650"] .c19a557985eb7793-timestampInline,
-li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedTextPreview
+li[data-author-id="636050805103001650"] .tagText__10651, 
+li[data-author-id="636050805103001650"] .repliedMessage_c19a55 .username_c19a55, 
+li[data-author-id="636050805103001650"] .timestamp_c19a55, 
+li[data-author-id="636050805103001650"] .timestampInline_c19a55,
+li[data-author-id="636050805103001650"] .repliedTextPreview_c19a55
 {
     color: black !important;
     font-family: 'ihatecomicsans', Arial, sans-serif !important;
@@ -270,35 +262,35 @@ li[data-author-id="636050805103001650"] ._752971923a1e6683-codeActions {
     color: white !important;
 }
 
-li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedMessage,
-li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedTextContentTrailingIcon,
-li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedMessageContentHovered,
+li[data-author-id="636050805103001650"] .repliedMessage_c19a55,
+li[data-author-id="636050805103001650"] .repliedTextContentTrailingIcon_c19a55,
+li[data-author-id="636050805103001650"] .repliedMessageContentHovered_c19a55,
 li[data-author-id="636050805103001650"] .channelMention,
-li[data-author-id="636050805103001650"] .f61d60ed65f9a128-wrapper,
-li[data-author-id="636050805103001650"] ._122e465d2e663859-footerContainer,
-li[data-author-id="636050805103001650"] ._122e465d2e663859-headerText,
-li[data-author-id="636050805103001650"] ._23977d5b7cef7361-reactionCount,
-li[data-author-id="636050805103001650"] ._0f481cbbd7530492-altText {
+li[data-author-id="636050805103001650"] .wrapper_f61d60,
+li[data-author-id="636050805103001650"] .footerContainer__122e4,
+li[data-author-id="636050805103001650"] .headerText__122e4,
+li[data-author-id="636050805103001650"] .reactionCount__23977,
+li[data-author-id="636050805103001650"] .altText__0f481 {
     color: black !important;
 }
 
-li[data-author-id="636050805103001650"] ._122e465d2e663859-quote {
+li[data-author-id="636050805103001650"] .quote__122e4 {
 	opacity: 1;
 	background-color: black !important;
 }
 
-li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedMessageClickableSpine{
+li[data-author-id="636050805103001650"] .repliedMessageClickableSpine_c19a55{
 	border-color: black !important;
 }
 
-li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedMessage .c19a557985eb7793-username {
+li[data-author-id="636050805103001650"] .repliedMessage_c19a55 .username_c19a55 {
 	opacity: 1;
 }
 
 /* svg elements */
-li[data-author-id="636050805103001650"] ._122e465d2e663859-headerIcon path,
-li[data-author-id="636050805103001650"] ._23977d5b7cef7361-reactionBtn ._23977d5b7cef7361-icon path,
-li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedTextContentLeadingIcon path {
+li[data-author-id="636050805103001650"] .headerIcon__122e4 path,
+li[data-author-id="636050805103001650"] .reactionBtn__23977 .icon__23977 path,
+li[data-author-id="636050805103001650"] .repliedTextContentLeadingIcon_c19a55 path {
 	fill: black !important;
 }
 
@@ -314,7 +306,7 @@ li[data-author-id="636050805103001650"] code {
     letter-spacing: 0px;
 }
 
-li[data-author-id="636050805103001650"] ._506b39a96c2f8884-scrollbarGhostHairline {
+li[data-author-id="636050805103001650"] .scrollbarGhostHairline__506b3 {
     background-color: #353748 !important;
     color:white !important;
     font-weight: normal;
@@ -324,27 +316,27 @@ li[data-author-id="636050805103001650"] attachmentLink {
     background-color: #8A47FF !important;
 }
 
-li[data-author-id="636050805103001650"] .c19a557985eb7793-messageContent .edefb8e22d63c542-anchor,
-li[data-author-id="636050805103001650"] .c19a557985eb7793-messageContent .edefb8e22d63c542-anchorUnderlineOnHover {
+li[data-author-id="636050805103001650"] .messageContent_c19a55 .anchor_edefb8,
+li[data-author-id="636050805103001650"] .messageContent_c19a55 .anchorUnderlineOnHover_edefb8 {
     color: #8C49FF !important;
 }
 
-li[data-author-id="636050805103001650"] .c19a557985eb7793-headerText ._10651c5cfe637db6-badge {
+li[data-author-id="636050805103001650"] .headerText_c19a55 .badge__10651 {
     content: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/favicon.png")
 }
 
-li[data-author-id="636050805103001650"] .c19a557985eb7793-headerText ._10651c5cfe637db6-tagText {
+li[data-author-id="636050805103001650"] .headerText_c19a55 .tagText__10651 {
     font-size: 0;
 }
 
-li[data-author-id="636050805103001650"] .c19a557985eb7793-headerText ._10651c5cfe637db6-tagText::after {
+li[data-author-id="636050805103001650"] .headerText_c19a55 .tagText__10651::after {
     content: "gay";
     font-size: 12px;
 }
 
 /* DERZOX */
 
-li[data-author-id="714529404432154734"] ._5126c0cd07f243a0-message {
+li[data-author-id="714529404432154734"] .message__5126c {
     border-radius: 10px;
     background-color: black !important;
     border: 2px solid white;
@@ -352,36 +344,36 @@ li[data-author-id="714529404432154734"] ._5126c0cd07f243a0-message {
     padding-bottom: 6px;
     font-family: "derzoxrain";
 }
-li[data-author-id="714529404432154734"] ._752971923a1e6683-markup h1,
-li[data-author-id="714529404432154734"] ._752971923a1e6683-markup h2,
-li[data-author-id="714529404432154734"] ._752971923a1e6683-markup h3
+li[data-author-id="714529404432154734"] .markup__75297 h1,
+li[data-author-id="714529404432154734"] .markup__75297 h2,
+li[data-author-id="714529404432154734"] .markup__75297 h3
 {
     font-family: "derzoxrain";
 }
 
-li[data-author-id="714529404432154734"] .c19a557985eb7793-messageContent,
-li[data-author-id="714529404432154734"] .c19a557985eb7793-header,
-li[data-author-id="714529404432154734"] .f4758a8d6346d18b-visualMediaItemContainer,
-li[data-author-id="714529404432154734"] ._752971923a1e6683-markup,
-li[data-author-id="714529404432154734"] ._623de82e76ad7f82-inlineMediaEmbed,
-li[data-author-id="714529404432154734"] .f4758a8d6346d18b-nonVisualMediaItemContainer,
-li[data-author-id="714529404432154734"] ._083ae98ea5145b08-guildInviteContainer {
+li[data-author-id="714529404432154734"] .messageContent_c19a55,
+li[data-author-id="714529404432154734"] .header_c19a557,
+li[data-author-id="714529404432154734"] .visualMediaItemContainer_f4758a,
+li[data-author-id="714529404432154734"] .markup__75297,
+li[data-author-id="714529404432154734"] .inlineMediaEmbed__623de,
+li[data-author-id="714529404432154734"] .nonVisualMediaItemContainer_f4758a,
+li[data-author-id="714529404432154734"] .guildInviteContainer__083ae {
     position: relative;
     left: -60px;
 }
 
-li[data-author-id="714529404432154734"] .c19a557985eb7793-repliedMessage {
+li[data-author-id="714529404432154734"] .repliedMessage_c19a55 {
     position: relative;
     left: -50px;
 }
 
-li[data-author-id="714529404432154734"] .c19a557985eb7793-repliedMessageClickableSpine {
+li[data-author-id="714529404432154734"] .repliedMessageClickableSpine_c19a55 {
     width: 1%;
     left: -8px;
 }
 
-li[data-author-id="714529404432154734"] .c19a557985eb7793-avatar,
-li[data-author-id="714529404432154734"] .c19a557985eb7793-avatarDecoration {
+li[data-author-id="714529404432154734"] .avatar_c19a55,
+li[data-author-id="714529404432154734"] .avatar_c19a55Decoration {
     visibility: hidden;
 }
 
@@ -429,7 +421,7 @@ li[data-author-id="844289867714134097"] {
 	font-family: "doctoramigo" !important;
 }
 
-li[data-author-id="844289867714134097"] ._5126c0cd07f243a0-groupStart {
+li[data-author-id="844289867714134097"] .groupStart__5126c {
 	/* angela note jesus christ */
     background-image: linear-gradient(to bottom, 
 	#ffffff 2px,
@@ -456,7 +448,7 @@ li[data-author-id="844289867714134097"] ._5126c0cd07f243a0-groupStart {
 	padding-bottom: -20px;
 }
 
-li[data-author-id="844289867714134097"] .c19a557985eb7793-hasReply {
+li[data-author-id="844289867714134097"] .hasReply_c19a55 {
 	/* angela note jesus christ */
 	background-image: unset;
     background-image: linear-gradient(to bottom, 
@@ -484,7 +476,7 @@ li[data-author-id="844289867714134097"] .c19a557985eb7793-hasReply {
 	padding-bottom: -20px;
 }
 
-li[data-author-id="844289867714134097"] .c19a557985eb7793-headerText .c19a557985eb7793-username {
+li[data-author-id="844289867714134097"] .headerText_c19a55 .username_c19a55 {
 	background-color: white !important;
 	color: #0057af;
 	font-size: 36px;
@@ -492,27 +484,27 @@ li[data-author-id="844289867714134097"] .c19a557985eb7793-headerText .c19a557985
 	top: -10px;
 }
 
-li[data-author-id="844289867714134097"] .c19a557985eb7793-headerText {
+li[data-author-id="844289867714134097"] .headerText_c19a55 {
 	line-height: 60px;
 	top: -10px;
 }
 
-li[data-author-id="844289867714134097"] ._5126c0cd07f243a0-message,
-li[data-author-id="844289867714134097"] .c19a557985eb7793-repliedTextPreview,
-li[data-author-id="844289867714134097"] .c19a557985eb7793-repliedMessage .c19a557985eb7793-username 
+li[data-author-id="844289867714134097"] .message__5126c,
+li[data-author-id="844289867714134097"] .repliedTextPreview_c19a55,
+li[data-author-id="844289867714134097"] .repliedMessage_c19a55 .username_c19a55 
 {
     background-color: #0057af !important;
 	color: white;
 	border-radius: 0px;
 }
 
-li[data-author-id="844289867714134097"] .c19a557985eb7793-avatar {
+li[data-author-id="844289867714134097"] .avatar_c19a55 {
 	border-radius: 0px;
 	position: absolute;
 	top: -2px;
 }
 
-li[data-author-id="844289867714134097"] .c19a557985eb7793-hasReply .c19a557985eb7793-avatar {
+li[data-author-id="844289867714134097"] .hasReply_c19a55 .avatar_c19a55 {
 	top: 20px;
 }
 
@@ -520,8 +512,8 @@ li[data-author-id="844289867714134097"] .c19a557985eb7793-hasReply .c19a557985eb
 removing if i figure out how to make it not be placed weird*/
 
 li[data-author-id="844289867714134097"] .vc-message-decorations-wrapper,
-li[data-author-id="844289867714134097"] .c19a557985eb7793-timestampInline,
-li[data-author-id="844289867714134097"] ._10651c5cfe637db6-chipletContainerInline
+li[data-author-id="844289867714134097"] .timestamp_c19a55Inline,
+li[data-author-id="844289867714134097"] .chipletContainerInline__10651
 {
 	display: none;
 }
@@ -537,7 +529,7 @@ here too if you wish
 
 /* NRN */
 
-li[data-author-id="1228671529881964636"] ._5126c0cd07f243a0-message {
+li[data-author-id="1228671529881964636"] .message__5126c {
     background-image: linear-gradient(180deg, #000000 50%, #00d500 100%) !important;
     border: 2px solid black;
     border-radius: 10px;
@@ -545,25 +537,25 @@ li[data-author-id="1228671529881964636"] ._5126c0cd07f243a0-message {
     padding-bottom: 10px;
 }
 
-li[data-author-id="1228671529881964636"] .c19a557985eb7793-messageContent {
+li[data-author-id="1228671529881964636"] .messageContent_c19a55 {
     color: white;
     font-family: 'comicsanslol', Arial, sans-serif !important;
 }
 
-li[data-author-id="1228671529881964636"] ._752971923a1e6683-markup h1,
-li[data-author-id="1228671529881964636"] ._752971923a1e6683-markup h2,
-li[data-author-id="1228671529881964636"] ._752971923a1e6683-markup h3,
-li[data-author-id="1228671529881964636"] ._752971923a1e6683-markup small span,
-li[data-author-id="1228671529881964636"] ._752971923a1e6683-markup small span strong span {
+li[data-author-id="1228671529881964636"] .markup__75297 h1,
+li[data-author-id="1228671529881964636"] .markup__75297 h2,
+li[data-author-id="1228671529881964636"] .markup__75297 h3,
+li[data-author-id="1228671529881964636"] .markup__75297 small span,
+li[data-author-id="1228671529881964636"] .markup__75297 small span strong span {
     color: white;
     font-family: 'comicsanslol', Arial, sans-serif !important;
 }
 
-li[data-author-id="1228671529881964636"] ._10651c5cfe637db6-tagText, 
-li[data-author-id="1228671529881964636"] .c19a557985eb7793-username, 
-li[data-author-id="1228671529881964636"] .c19a557985eb7793-timestamp, 
-li[data-author-id="1228671529881964636"] .c19a557985eb7793-timestampInline,
-li[data-author-id="1228671529881964636"] .c19a557985eb7793-repliedTextPreview
+li[data-author-id="1228671529881964636"] .tagText__10651, 
+li[data-author-id="1228671529881964636"] .username_c19a55, 
+li[data-author-id="1228671529881964636"] .timestamp_c19a55, 
+li[data-author-id="1228671529881964636"] .timestamp_c19a55Inline,
+li[data-author-id="1228671529881964636"] .repliedTextPreview_c19a55
 {
     color: white !important;
     font-family: 'comicsanslol', Arial, sans-serif !important;
