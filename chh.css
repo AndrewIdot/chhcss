@@ -2,7 +2,7 @@
  * @name ChhMembers
  * @author the chh guys
  * @description all of us
- * @version 1.2.5
+ * @version 1.4.1
 */
 
 /* //// fonts //// */
@@ -15,8 +15,8 @@
 }
 
 @font-face {
-  font-family: 'adler';
-  src: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/fnt/adler.ttf");
+  font-family: 'mom';
+  src: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/fnt/mom.ttf");
 }
 
 @font-face {
@@ -39,6 +39,10 @@
 	src: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/fnt/amiga.ttf") format('truetype');
 }
 
+@font-face {
+	font-family: 'typewriter';
+	src: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/fnt/typewriter.ttf") format('truetype');
+}
 
 /* //// font end //// */
 
@@ -85,7 +89,7 @@ li[data-author-id="1334564142891143259"] .username_c19a55 {
 } 
 
 li[data-author-id="1334564142891143259"] .clanTagChiplet_c19a55,
-li[data-author-id="1334564142891143259"]  .clickable_ee71ee {
+li[data-author-id="1334564142891143259"] .clickable_ee71ee {
     display: none;
 }
 
@@ -103,9 +107,9 @@ li[data-author-id="1334564142891143259"]  .clickable_ee71ee {
     -webkit-text-fill-color: black;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: "adler", "typewriter";
+    font-family: "mom", "typewriter";
     vertical-align: bottom;
-    background: linear-gradient( rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20) ), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRohl7eCgheWfgPflpDzh9tVKIGbAVTCJ2AWw&s') !important;
+    background: linear-gradient( rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20) ), url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/icepaper.png") !important;
     background-size: 15% !important;
     background-color: #000;
     border: dashed black 1.5px;
@@ -113,6 +117,14 @@ li[data-author-id="1334564142891143259"]  .clickable_ee71ee {
     & strong {
         font-weight: bolder;
     }
+}
+
+li[data-author-id="467270876673605642"] .message-content-1460679529025507439 {
+    vertical-align: middle;
+}
+
+[data-author-id="467270876673605642"] * {
+    border-radius: 0px;
 }
 
 li[data-author-id="467270876673605642"] .timestamp_c19a55 {
@@ -179,7 +191,7 @@ li[data-author-id="467270876673605642"] .af017ab847f75d02-originalLink {
 li[data-author-id="636050805103001650"] .message__5126c {
     background-color: #C2AEEF;
     background-image: url('https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/angelapolka.png') !important;
-    background-size: 40% !important;
+    background-size: 300px 300px !important;
     border: 4px solid #DACCFF;
     border-radius: 15px;
 }
@@ -252,7 +264,7 @@ li[data-author-id="636050805103001650"] .headerText_c19a55 .username_c19a55 {
 	border-radius: 25px;
 	border: 4px solid #DACCFF;
 	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-	background-color: #C2AEEF !important;
+	background-color: #ab98dc !important;
 	padding-left: 5px;
 	padding-right: 5px;
     font-family: 'ihatecomicsans', Arial, sans-serif !important;
