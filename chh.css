@@ -1,8 +1,8 @@
 /**
- * @name ChhMembers
- * @author The CHH guys
+ * @name CHHMemberstest
+ * @author the CHH guys
  * @description all of us
- * @version 1.2.2
+ * @version 1.2.4
 */
 
 /* //// fonts //// */
@@ -16,8 +16,16 @@
 
 @font-face {
   font-family: 'adler';
-  src: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/fnt/adler.ttf");
+  src: url("https://file.garden/ZHZbTOH23R-SBpdY/Mom.ttf");
+  
 }
+
+@font-face {
+    font-family: 'typewriter';
+    src: url("https://file.garden/ZHZbTOH23R-SBpdY/veteran%20typewriter.ttf")
+}
+/*V-NOTE: I added this font in an attempt to make Ice's messages work a little better with special characters, since @ and other characters
+like it just do not exist in Adler, but I can't find a way to get the fallback to work properly, so I'll be sitting on this*/
 
 @font-face {
     font-family: 'derzoxrain';
@@ -33,6 +41,12 @@
 	font-family: 'comicsanslol';
 	src: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/fnt/Comic%20Sans%20MS.ttf") format('truetype');
 }
+
+@font-face {
+	font-family: 'doctoramigo';
+	src: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/fnt/amiga.ttf") format('truetype');
+}
+
 
 /* //// font end //// */
 
@@ -54,23 +68,32 @@ li[data-author-id="1334564142891143259"] .c19a557985eb7793-messageContent {
     }
 }
 
-/*li[data-author-id="1334564142891143259"] .c19a557985eb7793-username {
+li[data-author-id="1334564142891143259"] .c19a557985eb7793-headerText .c19a557985eb7793-username {
     font-size: 0;
 } 
 
-li[data-author-id="1334564142891143259"] .c19a557985eb7793-username::after {
+li[data-author-id="1334564142891143259"] .c19a557985eb7793-headerText .c19a557985eb7793-username::after {
     content: "Vea Ortis";
+	font-family: "Lucida Console", "lucidaconsolebu" !important;
     -webkit-text-fill-color: white;
     font-size: 15px;
     font-weight: bolder;
     display: inline;
-}*/
+}
+
+/*V-NOTE; The above was an attempt to make my username appear consistent accross everything
+despite my nickname, but the big issue is that in replies this will also replace the reply-ee's
+username as well, which looks really weird. unsure if there's a solution or if i'm just going to
+have to drop this idea, maybe i could do a custom server tag like angela? */
+/* angela note: fixed :3 */
 
 li[data-author-id="1334564142891143259"] .c19a557985eb7793-username {
     -webkit-text-fill-color: white;
+    font-weight: bolder;
 } 
 
-li[data-author-id="1334564142891143259"] .c19a557985eb7793-clanTagChiplet, .ee71ee16cc02184d-clickable {
+li[data-author-id="1334564142891143259"] .c19a557985eb7793-clanTagChiplet,
+li[data-author-id="1334564142891143259"]  .ee71ee16cc02184d-clickable {
     display: none;
 }
 
@@ -88,25 +111,33 @@ li[data-author-id="1334564142891143259"] .c19a557985eb7793-clanTagChiplet, .ee71
     -webkit-text-fill-color: black;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: "adler";
-    background: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ), url('https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/paper.jpg') !important;
-    background-size: 40% !important;
+    font-family: "adler", "typewriter";
+    vertical-align: bottom;
+    background: linear-gradient( rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20) ), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRohl7eCgheWfgPflpDzh9tVKIGbAVTCJ2AWw&s') !important;
+    background-size: 15% !important;
     background-color: #000;
-    border: dashed black 1px;
+    border: dashed black 1.5px;
+
+    & strong {
+        font-weight: bolder;
+    }
 }
 
-li[data-author-id="467270876673605642"] .c19a557985eb7793-avatar {
-    display: none;
+li[data-author-id="467270876673605642"] .message-content-1460679529025507439 {
+    vertical-align: middle;
 }
 
-li[data-author-id="467270876673605642"] ._23977d5b7cef7361-reactions {
-    display: none;
+[data-author-id="467270876673605642"] * {
+    border-radius: 0px;
 }
 
-li[data-author-id="467270876673605642"] .c19a557985eb7793-timestampVisibleOnHover {
-    display: none;
+li[data-author-id="467270876673605642"] .c19a557985eb7793-timestamp {
+    text-decoration: underline;
 }
 
+li[data-author-id="467270876673605642"] .c19a557985eb7793-avatar,
+li[data-author-id="467270876673605642"] ._23977d5b7cef7361-reactions,
+li[data-author-id="467270876673605642"] .c19a557985eb7793-timestampVisibleOnHover,
 li[data-author-id="467270876673605642"] .c19a557985eb7793-repliedMessageClickableSpine {
     display: none;
 }
@@ -114,20 +145,47 @@ li[data-author-id="467270876673605642"] .c19a557985eb7793-repliedMessageClickabl
 
 [data-author-id="467270876673605642"] .c19a557985eb7793-messageContent::before {
     display: inline-block;
-    font-size: 1.20em;
-    content: "= ";
+    font-size: 1em;
+    content: "- ";
+    transform: scale(1.4, 0.9);
 }
 
 li[data-author-id="467270876673605642"] ._752971923a1e6683-markup {
     left: -50px;
 }
 
+li[data-author-id="467270876673605642"] .c19a557985eb7793-edited {
+    font-size: 0px;
+}
+
+li[data-author-id="467270876673605642"] .f61d60ed65f9a128-wrapper {
+    background-color: rgba(255, 255, 0, 0.303);
+}
+
+li[data-author-id="467270876673605642"] .c19a557985eb7793-edited::after {
+    content: "(REVISED)";
+	font-size: 10px;
+	text-decoration: underline;
+}
+
+li[data-author-id="467270876673605642"] ._299eb87491f4b6d1-spoilerMarkdownContent {
+    background-color: var(--__current--spoiler-background-color);
+    filter: brightness(0%);
+    border-radius: 0%;
+}
+/* V-Note: there has GOT to be a better way to do this */
+
+li[data-author-id="467270876673605642"] .af017ab847f75d02-originalLink {
+    border: black solid;
+    border-width: 4px 4px 10px 4px;
+}
+
 /* ANGELA */
 
 li[data-author-id="636050805103001650"] ._5126c0cd07f243a0-message {
-    background-color: #C2AEEF; //#451f68;
+    background-color: #C2AEEF;
     background-image: url('https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/angelapolka.png') !important;
-    background-size: 40% !important;
+    background-size: 300px 300px !important;
     border: 4px solid #DACCFF;
     border-radius: 15px;
 }
@@ -159,12 +217,7 @@ li[data-author-id="636050805103001650"] .c19a557985eb7793-messageContent {
     letter-spacing: 1px;
 
     & strong {
-        // color: #5E43D3;
         font-size: 20px;
-    }
-
-    & em, & i {
-        // color: red;
     }
 }
 
@@ -180,7 +233,6 @@ li[data-author-id="636050805103001650"] ._752971923a1e6683-markup small span {
     color: black;
     font-family: 'ihatecomicsans', Arial, sans-serif !important;
     font-weight: normal;
-    font-style: italic;
 }
 
 li[data-author-id="636050805103001650"] ._752971923a1e6683-markup small span strong span {
@@ -191,12 +243,24 @@ li[data-author-id="636050805103001650"] ._752971923a1e6683-markup small span str
 }
 
 li[data-author-id="636050805103001650"] ._10651c5cfe637db6-tagText, 
-li[data-author-id="636050805103001650"] .c19a557985eb7793-username, 
+li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedMessage .c19a557985eb7793-username, 
 li[data-author-id="636050805103001650"] .c19a557985eb7793-timestamp, 
 li[data-author-id="636050805103001650"] .c19a557985eb7793-timestampInline,
 li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedTextPreview
 {
     color: black !important;
+    font-family: 'ihatecomicsans', Arial, sans-serif !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+li[data-author-id="636050805103001650"] .c19a557985eb7793-headerText .c19a557985eb7793-username {
+	border-radius: 25px;
+	border: 4px solid #DACCFF;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	background-color: #ab98dc !important;
+	padding-left: 5px;
+	padding-right: 5px;
     font-family: 'ihatecomicsans', Arial, sans-serif !important;
     font-weight: bold;
     letter-spacing: 1px;
@@ -210,15 +274,32 @@ li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedMessage,
 li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedTextContentTrailingIcon,
 li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedMessageContentHovered,
 li[data-author-id="636050805103001650"] .channelMention,
-li[data-author-id="636050805103001650"] .f61d60ed65f9a128-wrapper {
+li[data-author-id="636050805103001650"] .f61d60ed65f9a128-wrapper,
+li[data-author-id="636050805103001650"] ._122e465d2e663859-footerContainer,
+li[data-author-id="636050805103001650"] ._122e465d2e663859-headerText,
+li[data-author-id="636050805103001650"] ._23977d5b7cef7361-reactionCount,
+li[data-author-id="636050805103001650"] ._0f481cbbd7530492-altText {
     color: black !important;
 }
 
-li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedMessageClickableSpine
-{
-    background-color: black !important;
-    border-radius: 10px;
-    height: 20%;
+li[data-author-id="636050805103001650"] ._122e465d2e663859-quote {
+	opacity: 1;
+	background-color: black !important;
+}
+
+li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedMessageClickableSpine{
+	border-color: black !important;
+}
+
+li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedMessage .c19a557985eb7793-username {
+	opacity: 1;
+}
+
+/* svg elements */
+li[data-author-id="636050805103001650"] ._122e465d2e663859-headerIcon path,
+li[data-author-id="636050805103001650"] ._23977d5b7cef7361-reactionBtn ._23977d5b7cef7361-icon path,
+li[data-author-id="636050805103001650"] .c19a557985eb7793-repliedTextContentLeadingIcon path {
+	fill: black !important;
 }
 
 li[data-author-id="636050805103001650"] .emoji {
@@ -248,15 +329,15 @@ li[data-author-id="636050805103001650"] .c19a557985eb7793-messageContent .edefb8
     color: #8C49FF !important;
 }
 
-li[data-author-id="636050805103001650"] ._10651c5cfe637db6-badge {
+li[data-author-id="636050805103001650"] .c19a557985eb7793-headerText ._10651c5cfe637db6-badge {
     content: url("https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/favicon.png")
 }
 
-li[data-author-id="636050805103001650"] ._10651c5cfe637db6-tagText {
+li[data-author-id="636050805103001650"] .c19a557985eb7793-headerText ._10651c5cfe637db6-tagText {
     font-size: 0;
 }
 
-li[data-author-id="636050805103001650"] ._10651c5cfe637db6-tagText::after {
+li[data-author-id="636050805103001650"] .c19a557985eb7793-headerText ._10651c5cfe637db6-tagText::after {
     content: "gay";
     font-size: 12px;
 }
@@ -333,11 +414,159 @@ li[data-author-id="328514436245618699"] {
 li[data-author-id="212160419769483265"] {
     font-family: "M PLUS Rounded 1c", sans-serif;
     border-left: 1px solid #B5EDFF;
-    background: linear-gradient(to right, #B5EDFF60, #B5EDFF00);
+    background: linear-gradient(to right, #B5EDFF30, #B5EDFF00);
 }
 
 li[data-author-id="212160419769483265"] code {
     background-color: #353748 !important;
     font-weight: normal;
     letter-spacing: 0px;
+}
+
+/* BOYCRAFT */
+
+li[data-author-id="844289867714134097"] {
+	font-family: "doctoramigo" !important;
+}
+
+li[data-author-id="844289867714134097"] ._5126c0cd07f243a0-groupStart {
+	/* angela note jesus christ */
+    background-image: linear-gradient(to bottom, 
+	#ffffff 2px,
+	#ffffff 4px,
+	#0057AF 4px,
+	#0057AF 8px,
+	#ffffff 8px,
+	#ffffff 12px,
+	#0057AF 12px,
+	#0057AF 16px,
+	#ffffff 16px,
+	#ffffff 20px,
+	#0057AF 20px,
+	#0057AF 24px,
+	#ffffff 24px,
+	#ffffff 28px,
+	#0057AF 28px,
+	#0057AF 32px,
+	#ffffff 32px,
+	#ffffff 40px,
+	#0057AF 40px
+	) !important;
+	border-radius: 0px;
+	padding-bottom: -20px;
+}
+
+li[data-author-id="844289867714134097"] .c19a557985eb7793-hasReply {
+	/* angela note jesus christ */
+	background-image: unset;
+    background-image: linear-gradient(to bottom, 
+	#ffffff 24px,
+	#ffffff 26px,
+	#0057AF 26px,
+	#0057AF 30px,
+	#ffffff 30px,
+	#ffffff 34px,
+	#0057AF 34px,
+	#0057AF 38px,
+	#ffffff 38px,
+	#ffffff 42px,
+	#0057AF 42px,
+	#0057AF 46px,
+	#ffffff 46px,
+	#ffffff 50px,
+	#0057AF 50px,
+	#0057AF 54px,
+	#ffffff 54px,
+	#ffffff 62px,
+	#0057AF 62px
+	) !important;
+	border-radius: 0px;
+	padding-bottom: -20px;
+}
+
+li[data-author-id="844289867714134097"] .c19a557985eb7793-headerText .c19a557985eb7793-username {
+	background-color: white !important;
+	color: #0057af;
+	font-size: 36px;
+	line-height: 60px;
+	top: -10px;
+}
+
+li[data-author-id="844289867714134097"] .c19a557985eb7793-headerText {
+	line-height: 60px;
+	top: -10px;
+}
+
+li[data-author-id="844289867714134097"] ._5126c0cd07f243a0-message,
+li[data-author-id="844289867714134097"] .c19a557985eb7793-repliedTextPreview,
+li[data-author-id="844289867714134097"] .c19a557985eb7793-repliedMessage .c19a557985eb7793-username 
+{
+    background-color: #0057af !important;
+	color: white;
+	border-radius: 0px;
+}
+
+li[data-author-id="844289867714134097"] .c19a557985eb7793-avatar {
+	border-radius: 0px;
+	position: absolute;
+	top: -2px;
+}
+
+li[data-author-id="844289867714134097"] .c19a557985eb7793-hasReply .c19a557985eb7793-avatar {
+	top: 20px;
+}
+
+/* angela note: this stuff at the bottom removes the extra info at the top of a beginning message,
+removing if i figure out how to make it not be placed weird*/
+
+li[data-author-id="844289867714134097"] .vc-message-decorations-wrapper,
+li[data-author-id="844289867714134097"] .c19a557985eb7793-timestampInline,
+li[data-author-id="844289867714134097"] ._10651c5cfe637db6-chipletContainerInline
+{
+	display: none;
+}
+
+
+/* 
+---------- NON-CHH PEOPLE HERE ---------- 
+im aware that this was sorta only for chh but i wanted to do some
+for some friends too without having to have like 50 trillion
+different .css files to have to update, you can add others
+here too if you wish
+*/
+
+/* NRN */
+
+li[data-author-id="1228671529881964636"] ._5126c0cd07f243a0-message {
+    background-image: linear-gradient(180deg, #000000 50%, #00d500 100%) !important;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+li[data-author-id="1228671529881964636"] .c19a557985eb7793-messageContent {
+    color: white;
+    font-family: 'comicsanslol', Arial, sans-serif !important;
+}
+
+li[data-author-id="1228671529881964636"] ._752971923a1e6683-markup h1,
+li[data-author-id="1228671529881964636"] ._752971923a1e6683-markup h2,
+li[data-author-id="1228671529881964636"] ._752971923a1e6683-markup h3,
+li[data-author-id="1228671529881964636"] ._752971923a1e6683-markup small span,
+li[data-author-id="1228671529881964636"] ._752971923a1e6683-markup small span strong span {
+    color: white;
+    font-family: 'comicsanslol', Arial, sans-serif !important;
+}
+
+li[data-author-id="1228671529881964636"] ._10651c5cfe637db6-tagText, 
+li[data-author-id="1228671529881964636"] .c19a557985eb7793-username, 
+li[data-author-id="1228671529881964636"] .c19a557985eb7793-timestamp, 
+li[data-author-id="1228671529881964636"] .c19a557985eb7793-timestampInline,
+li[data-author-id="1228671529881964636"] .c19a557985eb7793-repliedTextPreview
+{
+    color: white !important;
+    font-family: 'comicsanslol', Arial, sans-serif !important;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
