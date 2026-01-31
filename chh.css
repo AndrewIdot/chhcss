@@ -103,11 +103,16 @@ li[data-author-id="1334564142891143259"]  .clickable_ee71ee {
     -webkit-text-fill-color: black;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: "adler";
-    background: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ), url('https://raw.githubusercontent.com/AndrewIdot/chhcss/refs/heads/main/img/paper.jpg') !important;
-    background-size: 40% !important;
+    font-family: "adler", "typewriter";
+    vertical-align: bottom;
+    background: linear-gradient( rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20) ), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRohl7eCgheWfgPflpDzh9tVKIGbAVTCJ2AWw&s') !important;
+    background-size: 15% !important;
     background-color: #000;
-    border: dashed black 1px;
+    border: dashed black 1.5px;
+
+    & strong {
+        font-weight: bolder;
+    }
 }
 
 li[data-author-id="467270876673605642"] .timestamp_c19a55 {
@@ -141,6 +146,32 @@ li[data-author-id="467270876673605642"] .edited_c19a55::after {
     content: "(REVISED)";
 	font-size: 10px;
 	text-decoration: underline;
+}
+
+li[data-author-id="467270876673605642"] .c19a557985eb7793-edited {
+    font-size: 0px;
+}
+
+li[data-author-id="467270876673605642"] .f61d60ed65f9a128-wrapper {
+    background-color: rgba(255, 255, 0, 0.303);
+}
+
+li[data-author-id="467270876673605642"] .c19a557985eb7793-edited::after {
+    content: "(REVISED)";
+	font-size: 10px;
+	text-decoration: underline;
+}
+
+li[data-author-id="467270876673605642"] ._299eb87491f4b6d1-spoilerMarkdownContent {
+    background-color: var(--__current--spoiler-background-color);
+    filter: brightness(0%);
+    border-radius: 0%;
+}
+/* V-Note: there has GOT to be a better way to do this */
+
+li[data-author-id="467270876673605642"] .af017ab847f75d02-originalLink {
+    border: black solid;
+    border-width: 4px 4px 10px 4px;
 }
 
 /* ANGELA */
